@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Trump Impeachment</title>
+<style>
+body { 
+  border: 3px solid black;
+  margin: 30px;
+  padding: 100px;
+  background-color: sky-blue;
+}
+</style>
+</head>
+<body>
+
+<h1> Trump Impeachment </h1>
+<img src="trump.jpg" alt="trump" style="height:700px;width: 800px;">
+<p> This is the Trial of Donald J. Trump, in which you will have to make the decision whether to impeach Trump or not, good luck Judge.</p>
+<button onclick="trumpImpeach()">Start The Trial</button>
+
+
+
+<script type="text/javascript">
+function trumpImpeach(){
+var name = window.prompt("Enter Your Name")
+
+window.alert("Start Trial")
+window.alert("You are the judge of the case for Donald J. Trump, and you will make America great again, by deciding if Trump will be impeached or not. Good Luck " + name + ".")
+
+
+if (window.confirm("Hello " + name + ", based on what you have just observed during the prosecution and defence, Do you think that Trump should be impeached or not? (Ok = Impeach, Cancel = Not Impeach)")){
+playAudio();
+setTimeout(nukeMessage, 13000);
+} else { 
+playAmerica();
+window.alert("Thanks to you, Donald Trump is the greatest president of the United States of America, Thank you " + name + ", you have made America truly, great again.")
+
+	
+}
+}
+</script>
+
+<audio id="nuke"><source src="nuke.mp3" type="audio/mpeg"></audio>
+
+<script>
+var x = document.getElementById("nuke"); 
+function playAudio() { 
+  x.play(); 
+} 
+</script>
+
+<audio id="america"><source src="america.mp3" type="audio/mpeg"></audio>
+
+<script>
+var c = document.getElementById("america");
+function playAmerica() {
+  c.play();
+}
+</script>
+<script>
+function nukeMessage() {
+window.alert("Donald Trump Has Nuked the heck out of the democrats")
+}
+</script>
+</body>
+</html>
+
