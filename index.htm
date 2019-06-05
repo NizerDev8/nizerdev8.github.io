@@ -31,7 +31,7 @@ button{
 <body>
 
 <h1> Trump Impeachment </h1>
-<img src="trump.jpg" alt="trump" style="height:700px;width:800px;">
+<img src="trump.jpg" alt="trump" style="height:700px;width:1200px;">
 <p class="trial"> This is the Trial of Donald J. Trump, in which you will have to make the decision whether to impeach Trump or not, good luck Judge.</p>
 <button onclick="trumpImpeach()" style="height:100px;width:250px;">Start The Trial</button>
 <br>
@@ -44,7 +44,7 @@ function trumpImpeach(){
 var name = window.prompt("Enter Your Name")
 
 window.alert("Start Trial")
-window.alert("You are the judge of the case for Donald J. Trump, and you will make America great again, by deciding if Trump will be impeached or not. Good Luck " + name + ".")
+window.alert("You are the judge of the case for Donald J. Trump, you will decide if Trump will be impeached or not. Good Luck " + name + ".")
 window.alert(name + " please give your opening statement");
 window.alert("The Prosecution will now give their opening statement and list the charges");
 window.alert("The Defence will now give their opening statement");
@@ -61,9 +61,7 @@ window.alert("The Prosecution will now give their closing statement");
 window.alert("The Defence will now give their closing statement");
 
 if (window.confirm("Hello " + name + ", the time has come for you to make the decision, will you impeach Donald Trump or not? (Ok = Impeach, Cancel = Not Impeach)")){
-playAudio();
-window.open("https://youtu.be/_MBgz9h7GGM?t=20");
-setTimeout(nukeMessage, 13000);
+playAmerica();
 } else { 
 playAmerica();
 window.alert("Thanks to you, Donald Trump is the greatest president of the United States of America, Thank you " + name + ", you have made America truly, great again.")
@@ -94,7 +92,7 @@ function playAmerica() {
 </script>
 <script>
 function nukeMessage() {
-window.alert("Donald Trump Has Nuked the heck out of the democrats")
+window.alert("Donald Trump has been impeached by the judge")
 }
 </script>
 </body>
